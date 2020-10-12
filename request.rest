@@ -1,0 +1,187 @@
+### register
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "townhall":"usertown",
+    "email":"user@example.com",
+    "password":"password"
+}
+
+
+### login
+POST http://localhost:3000/users/signin
+Content-Type: application/json
+
+{
+    "email":"user@example.com",
+    "password":"password"
+}
+
+
+### resource information
+GET  http://localhost:3000/users/5f8303614a6cee24f85063c4
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+### rename townhall
+PUT http://localhost:3000/users/5f8303614a6cee24f85063c4
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "townhall":"Dragon of Valhalla"
+}
+
+
+
+
+### list market
+GET http://localhost:3000/markets/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+### create market
+POST http://localhost:3000/markets/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "marketName":"Oasis"
+}
+
+
+### get market detail by id
+GET http://localhost:3000/markets/5f830624ebc1c05ab4272b48
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+### rename market detail by id
+PUT http://localhost:3000/markets/5f830624ebc1c05ab4272b48
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "marketName":"Manchester City Sucks"
+}
+
+### delete market detail by id
+DELETE http://localhost:3000/markets/5f7ffea39a031267ac244341
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjdmZjJmMjk5YWEwYzUxYjg3OGU2MjIiLCJpYXQiOjE2MDIyMjA4MDh9.J1CnXWeYTQ-WJBWps2guPx0LD0Y-O3MsulGJoGjpPKw
+
+
+### collect market by id
+GET http://localhost:3000/markets/5f830624ebc1c05ab4272b48/collect
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+
+
+
+
+
+### list farm
+GET http://localhost:3000/farms/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjdmZjJmMjk5YWEwYzUxYjg3OGU2MjIiLCJpYXQiOjE2MDIyMjA4MDh9.J1CnXWeYTQ-WJBWps2guPx0LD0Y-O3MsulGJoGjpPKw
+
+### create farm
+POST http://localhost:3000/farms/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "farmName":"Glazer old fart"
+}
+
+### get farm detail by id
+GET http://localhost:3000/farms/5f830731ebc1c05ab4272b49
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+### rename farm detail by id
+PUT http://localhost:3000/farms/5f830731ebc1c05ab4272b49
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "farmName":"Ed Squidward"
+}
+
+### delete farm detail by id
+DELETE http://localhost:3000/farms/5f81c17de967244668b874b5
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjdmZjJmMjk5YWEwYzUxYjg3OGU2MjIiLCJpYXQiOjE2MDIyMjA4MDh9.J1CnXWeYTQ-WJBWps2guPx0LD0Y-O3MsulGJoGjpPKw
+
+
+### collect farm by id
+GET http://localhost:3000/farms/5f830731ebc1c05ab4272b49/collect
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+
+
+
+### list barrack
+GET http://localhost:3000/barracks/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+### create barrack
+POST http://localhost:3000/barracks/
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "barrackName":"kuroi"
+}
+
+### get barrack detail by id
+GET http://localhost:3000/barracks/5f8307ddebc1c05ab4272b4a
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+### rename barrack detail by id
+PUT http://localhost:3000/barracks/5f8307ddebc1c05ab4272b4a
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "barrackName":"Class of 95"
+}
+
+### delete barrack detail by id
+DELETE http://localhost:3000/barracks/5f81d0032cdf574a1057d545
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjdmZjJmMjk5YWEwYzUxYjg3OGU2MjIiLCJpYXQiOjE2MDIyMjA4MDh9.J1CnXWeYTQ-WJBWps2guPx0LD0Y-O3MsulGJoGjpPKw
+
+
+### collect barrack by id
+GET http://localhost:3000/barracks/5f8307ddebc1c05ab4272b4a/collect
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+
+
+### resource information
+GET  http://localhost:3000/users/5f8303614a6cee24f85063c4
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+
+
+### attack
+POST http://localhost:3000/attack/5f82931677cbae45286f514b
+Content-Type: application/json
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
+
+{
+    "soldiers" : 200
+}
