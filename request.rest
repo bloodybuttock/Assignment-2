@@ -88,7 +88,7 @@ access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZT
 ### list farm
 GET http://localhost:3000/farms/
 Content-Type: application/json
-access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjdmZjJmMjk5YWEwYzUxYjg3OGU2MjIiLCJpYXQiOjE2MDIyMjA4MDh9.J1CnXWeYTQ-WJBWps2guPx0LD0Y-O3MsulGJoGjpPKw
+access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
 
 ### create farm
 POST http://localhost:3000/farms/
@@ -96,7 +96,7 @@ Content-Type: application/json
 access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
 
 {
-    "farmName":"Glazer old fart"
+    "farmName":"Glazer old dart"
 }
 
 ### get farm detail by id
@@ -110,7 +110,7 @@ Content-Type: application/json
 access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
 
 {
-    "farmName":"Ed Squidward"
+    "farmName":"Ed Sward"
 }
 
 ### delete farm detail by id
