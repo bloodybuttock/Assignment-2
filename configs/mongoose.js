@@ -1,7 +1,11 @@
 const mongoose = require ('mongoose');
+require('dotenv').config()
+
+const cloud=`mongodb+srv://RetroHUB:${process.env.pass}@retrohub-cluster.yedkk.mongodb.net/clash_of_clans?retryWrites=true&w=majority`
+const local=`mongodb://localhost:27017/A2`
 
 module.exports = () => {
-    mongoose.connect('mongodb://localhost:27017/A2', {
+    mongoose.connect(cloud, {
     useNewUrlParser: true, 
     useUnifiedTopology: true
     });

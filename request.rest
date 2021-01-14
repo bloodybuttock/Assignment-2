@@ -31,7 +31,7 @@ Content-Type: application/json
 access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
 
 {
-    "townhall":"Dragon of Valhalla"
+    "townhall":"Merseyside derby"
 }
 
 
@@ -183,5 +183,5 @@ Content-Type: application/json
 access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgzMDM2MTRhNmNlZTI0Zjg1MDYzYzQiLCJpYXQiOjE2MDI0MjE2MTZ9.f3p2sEAYZG99ljijZw9gpYVYIvaicNyJNnxff2QEg2c
 
 {
-    "soldiers" : 200
+    "soldiers" : 20
 }
