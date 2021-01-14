@@ -7,6 +7,10 @@ const PORT =  process.env.PORT || 3000;
 
 mongooseConnect();
 
+app.get("", (req, res) => {
+  res.send("<h1>Clash of Clans-like backend</h1>");
+});
+
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(routes);
