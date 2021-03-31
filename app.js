@@ -8,6 +8,7 @@ const PORT =  process.env.PORT || 3000;
 const corsOptions = {
   origin: "*",
   // methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: "HEAD",
   preflightContinue: false,
   credentials: true,
 }
