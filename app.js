@@ -1,9 +1,18 @@
 const express = require('express');
 const mongooseConnect = require('./configs/mongoose');
 const routes = require('./routes')
-
+const cors=require('cors')
 const app = express();
 const PORT =  process.env.PORT || 3000;
+
+const corsOptions = {
+  origin: "*",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  credentials: true,
+}
+
+app.use(cors(corsOptions))
 
 mongooseConnect();
 
