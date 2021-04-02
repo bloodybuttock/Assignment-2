@@ -4,7 +4,10 @@ const jwt = require('jsonwebtoken');
 
 class UserController {
     static signup (req, res, next){
-        const {townhall,email,password} = req.body;
+        const {
+            // townhall,
+            email,
+            password} = req.body;
         const user = new User ({townhall,email,password});
         user
             .save()
@@ -12,7 +15,7 @@ class UserController {
                 res.status(201).json({success:true,
                 data:{
                     _id:user._id,
-                    townhall:user.townhall,
+                    // townhall:user.townhall,
                     medals:user.medals,
                     email:user.email,
                     resources:user.resources
